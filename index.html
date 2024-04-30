@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JONG.HO</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- 헤더(네비바) -->
+    <div class="header">
+        <nav>
+            <ul class="swiper-pagination"></ul>
+        </nav>
+
+    </div>
+
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+
+        <div id="particles-js"></div>
+
+        <div class="swiper-wrapper">
+
+            <!-- HOME -->
+            <div class="swiper-slide">
+                <div class='console-container'>
+                    <span id='text'></span>
+                    <div class='console-underscore' id='console'>&#95;</div>
+                </div>
+            </div>
+
+
+            <!-- ABOUT -->
+            <div class="swiper-slide">
+                <h1>About Me!!</h1>
+                <div class="frofile-img"></div>
+                <div class="timeline">
+                    <h3><span>이름 :</span> 전종호</h3>
+                    <h3><span>나이 :</span> 1997년생</h3>
+                    <h3><span>거주지 :</span> 경기도 화성</h3>
+                    <h3><span>MBTI :</span> INFJ</h3>
+                    <h3><span>교육이수 :</span> UI/UX 디자인관 프론트엔드 개발자 양성C 과정</h3>
+                    <h3><span>교육기간 :</span> 2023-12-04 ~ 2024-05-10</h3>
+                </div>
+                <div class="frofile">
+                    <h2>"자신의 성공이 현실이 되기 위해서는"<br> 다른 사람의 성공에 기여해야 한다.</h2>
+                    <p>농협 유통업에서 5년 정도 근무를 하면서 많은 경험을 쌓았지만, 제 자신의 성장에 한계를 느끼게 되었습니다.<br>
+                        평소에 관심이 있던 개발자라는 직업에 관심을가지게 되었고 지금까지 열심히 노력하고 배워왔습니다.<br>
+                        제가 배운 것을 활용하여 프로젝트에 적용하고, 동료들과 함께 작업을 하면서 아직 제가 부족한 부분을 많이 느끼고 있지만 제가 부족했던 부분을 꾸준히 노력하고 배워서 좋아지는
+                        모습 만족스러운 결과 꼭 보여드리겠습니다.</p>
+                </div>
+
+            </div>
+
+            <div class="swiper-slide">
+                <div class="loading">
+                    <span>SKILLS</span>
+                </div>
+
+                <div class="skills">
+                    <div>
+                        <img src="img/html.png" alt="html">
+                    </div>
+                    <div>
+                        <img src="img/css.png" alt="css">
+                    </div>
+                    <div>
+                        <img src="img/js.png" alt="js">
+                    </div>
+                    <div>
+                        <img src="img/j-q.png" alt="j-q">
+                    </div>
+                    <div>
+                        <img src="img/sass.png" alt="sass">
+                    </div>
+                    <div>
+                        <img src="img/react.png" alt="react">
+                    </div>
+                    <div>
+                        <img src="img/redux.png" alt="redux">
+                    </div>
+                    <div>
+                        <img src="img/ajax.png" alt="ajax">
+                    </div>
+                </div>
+
+                <div class="tool">
+                    <div>
+                        <img src="img/vs.png" alt="vs">
+                    </div>
+                    <div>
+                        <img src="img/git.png" alt="git">
+                    </div>
+                    <div>
+                        <img src="img/ps.png" alt="ps">
+                    </div>
+                    <div>
+                        <img src="img/lllus.png" alt="lllust">
+                    </div>
+                    <div>
+                        <img src="img/figma.png" alt="figma">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-slide">Slide 4
+
+            </div>
+
+            <div class="swiper-slide">
+                <div class="good">
+                    <h1 class="ml1">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters">THANK YOU</span>
+                            <span class="line line2"></span>
+                        </span>
+                    </h1>
+                </div>
+                <div class="introduce">
+                    <h3>저의 포트폴리오를 봐주셔서 감사합니다.<br>
+                    아직 부족하지만 </h3>
+                </div>
+                <div class="self">
+                    <h3>Mobile : 010 - 2723 - 2481</h3>
+                    <h3>Email : wjswhdgh97@naver.com</h3>
+                    <h3>GIT HUB : </h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var textWrapper = document.querySelector('.ml1 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml1 .letter',
+                scale: [0.3, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 600,
+                delay: (el, i) => 70 * (i + 1)
+            }).add({
+                targets: '.ml1 .line',
+                scaleX: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 700,
+                offset: '-=875',
+                delay: (el, i, l) => 80 * (l - i)
+            }).add({
+                targets: '.ml1',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+
+
+
+
+    <script>
+        const menu = ["Home", "About", "Skills", "Project", "Contact"]
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<li class="' + className + '">' + menu[index] + "</li>";
+                },
+            },
+        });
+    </script>
+
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 355,
+                    "density": {
+                        "enable": true,
+                        "value_area": 789.1476416322727
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    },
+                },
+                "opacity": {
+                    "value": 0.48927153781200905,
+                    "random": false,
+                    "anim": {
+                        "enable": true,
+                        "speed": 0.2,
+                        "opacity_min": 0,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 2,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 2,
+                        "size_min": 0,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 0.2,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "bubble"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 83.91608391608392,
+                        "size": 1,
+                        "duration": 3,
+                        "opacity": 1,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+    <script>
+        consoleText(['Hello World.', 'Front Developer', 'PORTFOLIO.'], 'text', ['lightblue', 'tomato', 'lightblue']);
+
+        function consoleText(words, id, colors) {
+            if (colors === undefined) colors = ['#fff'];
+            var visible = true;
+            var con = document.getElementById('console');
+            var letterCount = 1;
+            var x = 1;
+            var waiting = false;
+            var target = document.getElementById(id)
+            target.setAttribute('style', 'color:' + colors[0])
+            window.setInterval(function () {
+
+                if (letterCount === 0 && waiting === false) {
+                    waiting = true;
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    window.setTimeout(function () {
+                        var usedColor = colors.shift();
+                        colors.push(usedColor);
+                        var usedWord = words.shift();
+                        words.push(usedWord);
+                        x = 1;
+                        target.setAttribute('style', 'color:' + colors[0])
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (letterCount === words[0].length + 1 && waiting === false) {
+                    waiting = true;
+                    window.setTimeout(function () {
+                        x = -1;
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (waiting === false) {
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    letterCount += x;
+                }
+            }, 120)
+            window.setInterval(function () {
+                if (visible === true) {
+                    con.className = 'console-underscore hidden'
+                    visible = false;
+
+                } else {
+                    con.className = 'console-underscore'
+
+                    visible = true;
+                }
+            }, 400)
+        }
+    </script>
+
+
+</body>
+
+</html>
