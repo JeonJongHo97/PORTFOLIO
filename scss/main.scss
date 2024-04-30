@@ -47,19 +47,32 @@ canvas {
     height: 100vh;
     color: white;
 
+    .header-icon {
+        width: 100px;
+        height: 100px;
+        background-color: #ff3600;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        border-radius: 50px;
+        background-image: url(../img/icon1.png);
+        background-size: cover;
+    }
+
     nav {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 300px;
         height: 50%;
+        font-size: 1.5rem;
 
         .swiper-pagination {
-            left: 20%;
+            left: 30%;
 
             .swiper-pagination-bullet {
                 background: none;
-                padding: 10px 0;
+                padding: 20px 0;
                 color: #fff;
                 opacity: 0.5;
             }
@@ -116,23 +129,28 @@ canvas {
 .frofile-img {
     width: 250px;
     height: 250px;
-    background-color: antiquewhite;
+    background-image: url(../img/icon.png);
+    background-size: cover;
     position: absolute;
     top: 20%;
     left: 27%;
+    border-radius: 500px;
+
 }
 
 .timeline {
     width: 600px;
     height: 250px;
-    background-color: antiquewhite;
+    background-color: #F8FAFF;
     position: absolute;
     top: 20%;
     left: 45%;
     color: black;
+    border-radius: 50px;
+
 
     h3 {
-        padding: 7px 10px;
+        padding: 8.5px 50px;
         font-weight: 500;
     }
 
@@ -143,13 +161,14 @@ canvas {
 
 .frofile {
     width: 1000px;
-    height: 400px;
-    background-color: antiquewhite;
+    height: 300px;
+    background-color: #F8FAFF;
     position: absolute;
-    top: 47%;
+    top: 55%;
     left: 26%;
     color: black;
     text-align: center;
+    border-radius: 50px;
 
     h2 {
         padding: 30px 0;
@@ -241,7 +260,6 @@ canvas {
 .skills {
     width: 800px;
     height: 300px;
-    background-color: rgb(142, 142, 142);
     position: absolute;
     top: 25%;
     left: 27%;
@@ -253,6 +271,10 @@ canvas {
         width: 100px;
         height: 100px;
         margin-left: 50px;
+        border: 1px solid #373737;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             width: 80%;
@@ -263,17 +285,21 @@ canvas {
 .tool {
     width: 800px;
     height: 150px;
-    background-color: rgb(142, 142, 142);
     position: absolute;
     top: 65%;
     left: 27%;
     display: flex;
     align-items: center;
 
+
     div {
         width: 100px;
         height: 100px;
         margin-left: 50px ;
+        border: 1px solid #373737;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             width: 80%;
@@ -284,6 +310,83 @@ canvas {
 }
 
 // Project
+.project {
+    width: 100%;
+    height: 90%;
+    position: relative;
+
+    .box {
+        width: 1000px;
+        height: 700px;
+        background-color: #b7b7b7;
+        border-radius: 10px;
+        position: absolute;
+        top: 10%;
+        // left: 23%;
+        left: 42%;
+
+        .box_1 {
+            width: 700px;
+            height: 400px;
+            position: absolute;
+            top: 3%;
+            left: 15%;
+            img { 
+                width: 100%;
+                border-style: none;
+                transition: 5s;
+            }
+        }
+        .box_1:hover {
+            transform: translateY(-85.5%);
+        }
+
+        .box_2 {
+            width: 700px;
+            height: 50px;
+            position: absolute;
+            top: 61%;
+            left: 15%;
+            display: flex;
+            flex-wrap: wrap;
+
+            button {
+                padding: 10px 20px;
+                margin-right: 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #c134e8;
+                color: #fff;
+                font-size: 15px;
+            }
+        }
+
+        .box_3 {
+            width: 700px;
+            height: 150px;
+            background-color: #696ba1;
+            position: absolute;
+            top: 71%;
+            left: 15%;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20PX;
+        color: #ffffff;
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+      }
+  
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #c80fe5;
+      }
+}
 
 
 // contact
@@ -333,4 +436,20 @@ canvas {
     top: 30%;
     left: 40%;
   }
+.self{
+    position: absolute;
+    top: 55%;
+    left: 34%;
+
+    h3{
+        font-size: 2.5rem;
+        font-weight: 100;
+        padding: 10px 0;
+    }
+    span {
+        font-weight: bold;
+    }
+}
+
+
 

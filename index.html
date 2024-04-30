@@ -22,6 +22,7 @@
 
     <!-- 헤더(네비바) -->
     <div class="header">
+        <div class="header-icon"></div>
         <nav>
             <ul class="swiper-pagination"></ul>
         </nav>
@@ -49,6 +50,7 @@
             <div class="swiper-slide">
                 <h1>About Me!!</h1>
                 <div class="frofile-img"></div>
+
                 <div class="timeline">
                     <h3><span>이름 :</span> 전종호</h3>
                     <h3><span>나이 :</span> 1997년생</h3>
@@ -67,6 +69,7 @@
 
             </div>
 
+            <!-- SKILLS -->
             <div class="swiper-slide">
                 <div class="loading">
                     <span>SKILLS</span>
@@ -120,8 +123,81 @@
 
             </div>
 
-            <div class="swiper-slide">Slide 4
+            <div class="swiper-slide"> 
+                <div class="swiper project">
+                    <div class="swiper-wrapper">
 
+                      <div class="swiper-slide">
+                        <div class="box">
+                            <div class="box_1">
+                                <img src="img/hotel_1.jpg" alt="hotel">
+                            </div>
+                            <div class="box_2">
+                                <button>#HTML</button>
+                                <button>#CSS</button>
+                            </div>
+                            <div class="box_3"></div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="box">
+                            <div class="box_1"></div>
+                            <div class="box_2">
+                                <button>#HTML</button>
+                                <button>#CSS</button>
+                                <button>#j-query</button>
+                                <button>#반응형</button>
+                            </div>
+                            <div class="box_3"></div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="box">
+                            <div class="box_1"></div>
+                            <div class="box_2">
+                                <button>#HTML</button>
+                                <button>#CSS</button>
+                                <button>#j-query</button>
+                                <button>#javascript</button>
+                                <button>#scss</button>
+                                <button>#반응형</button>
+                            </div>
+                            <div class="box_3"></div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="box">
+                            <div class="box_1"></div>
+                            <div class="box_2">
+                                <button>#HTML</button>
+                                <button>#AJAX</button>
+                                <button>#JAVASCRIPT</button>
+                                <button>#openAPI</button>
+                            </div>
+                            <div class="box_3"></div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="box">
+                            <div class="box_1"></div>
+                            <div class="box_2">
+                                <button>#React</button>
+                                <button>#Redux</button>
+                                <button>#Swiper</button>
+                                <button>#BootStrab</button>
+                                <button>#반응형</button>
+                            </div>
+                            <div class="box_3"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>    
             </div>
 
             <div class="swiper-slide">
@@ -135,19 +211,25 @@
                     </h1>
                 </div>
                 <div class="introduce">
-                    <h3>저의 포트폴리오를 봐주셔서 감사합니다.<br>
-                    아직 부족하지만 </h3>
+                    <h3>저의 포트폴리오를 봐주셔서 감사합니다.</h3>
                 </div>
                 <div class="self">
-                    <h3>Mobile : 010 - 2723 - 2481</h3>
-                    <h3>Email : wjswhdgh97@naver.com</h3>
-                    <h3>GIT HUB : </h3>
+                    <h3><span>Mobile :</span> 010 - 2723 - 2481</h3>
+                    <h3><span>Email :</span> wjswhdgh97@naver.com</h3>
+                    <h3><span>GIT HUB :</span> github.com/JeonJongHo97</h3>
                 </div>
             </div>
 
         </div>
 
     </div>
+
+    <script></script>
+
+
+
+
+
 
 
     <script>
@@ -180,26 +262,33 @@
             });
     </script>
 
-
-
-
     <script>
         const menu = ["Home", "About", "Skills", "Project", "Contact"]
         var swiper = new Swiper(".mySwiper", {
             direction: "vertical",
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 50,
             mousewheel: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: "nav .swiper-pagination",
                 clickable: true,
                 renderBullet: function (index, className) {
                     return '<li class="' + className + '">' + menu[index] + "</li>";
                 },
             },
         });
-    </script>
 
+        const project = ["PALACE","KYOBO","WATER MELON","FESTIVAL","HOTEL"]
+        var swiper = new Swiper(".project", {
+      pagination: {
+        el: ".project .swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + project[index] + "</span>";
+        },
+      },
+    });
+    </script>
 
     <script>
         particlesJS("particles-js", {
