@@ -159,6 +159,81 @@ canvas {
   padding: 10px 90px;
 }
 
+.skills {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  top: 25%;
+  left: 27%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skills div {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  border: 1px solid #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.skills div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+.skills div img {
+  width: 80%;
+  height: 80%;
+}
+.skills div:hover p {
+  display: block;
+}
+
+.tool {
+  width: 800px;
+  height: 150px;
+  position: absolute;
+  top: 65%;
+  left: 27%;
+  display: flex;
+  align-items: center;
+}
+.tool div {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  border: 1px solid #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tool div p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+.tool div img {
+  width: 80%;
+  height: 80%;
+}
+.tool div:hover p {
+  display: block;
+}
+
 .loading {
   text-transform: uppercase;
   width: 150px;
@@ -232,87 +307,65 @@ canvas {
     transform: translateX(-50px);
   }
 }
-.skills {
-  width: 800px;
-  height: 300px;
-  position: absolute;
-  top: 25%;
-  left: 27%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.skills div {
-  width: 100px;
-  height: 100px;
-  margin-left: 50px;
-  border: 1px solid #373737;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skills div img {
-  width: 80%;
-  height: 80%;
-}
-
-.tool {
-  width: 800px;
-  height: 150px;
-  position: absolute;
-  top: 65%;
-  left: 27%;
-  display: flex;
-  align-items: center;
-}
-.tool div {
-  width: 100px;
-  height: 100px;
-  margin-left: 50px;
-  border: 1px solid #373737;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.tool div img {
-  width: 80%;
-  height: 80%;
-}
-
 .project {
   width: 100%;
   height: 90%;
   position: relative;
 }
+.project .wrap {
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  top: 92%;
+  left: 15%;
+}
+.project .wrap img {
+  width: 100%;
+  height: 100%;
+}
+.project .wrap .chatbox {
+  animation: motion 0.3s linear 0s infinite alternate;
+  margin-top: 0;
+}
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
 .project .box {
   width: 1000px;
-  height: 700px;
+  height: 680px;
   background-color: #b7b7b7;
   border-radius: 10px;
   position: absolute;
   top: 10%;
-  left: 42%;
+  left: 21%;
 }
 .project .box .box_1 {
   width: 700px;
   height: 400px;
+  background-color: #F8FAFF;
   position: absolute;
   top: 3%;
   left: 15%;
+  overflow: hidden;
 }
 .project .box .box_1 img {
   width: 100%;
   border-style: none;
-  transition: 5s;
+  transition: 10s;
 }
-.project .box .box_1:hover {
-  transform: translateY(-85.5%);
+.project .box .box_1:hover img {
+  transform: translateY(calc(-100% + 400px));
 }
 .project .box .box_2 {
-  width: 700px;
+  width: 800px;
   height: 50px;
   position: absolute;
-  top: 61%;
+  top: 65%;
   left: 15%;
   display: flex;
   flex-wrap: wrap;
@@ -328,11 +381,30 @@ canvas {
 }
 .project .box .box_3 {
   width: 700px;
-  height: 150px;
-  background-color: #696ba1;
+  height: 100px;
   position: absolute;
   top: 71%;
-  left: 15%;
+  left: 12%;
+  text-align: center;
+}
+.project .box .box_3 h3 {
+  padding-top: 40px;
+}
+.project .box .box_3 p {
+  padding-top: 10px;
+}
+.project .box .box_4 {
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  top: 90%;
+  left: 41%;
+  text-align: center;
+}
+.project .box .box_4 button {
+  padding: 10px 9px;
+  border-radius: 10px;
+  border: none;
 }
 .project .swiper-pagination-bullet {
   width: 150px;
@@ -350,11 +422,11 @@ canvas {
 }
 
 .good {
-  width: 500px;
+  width: 1000px;
   height: 100px;
   position: absolute;
-  top: 15%;
-  left: 35%;
+  top: 18%;
+  left: 25%;
 }
 
 .ml1 {
@@ -365,7 +437,7 @@ canvas {
 .ml1 .letter {
   display: inline-block;
   line-height: 1em;
-  font-size: 5rem;
+  font-size: 8rem;
 }
 
 .ml1 .text-wrapper {
@@ -396,7 +468,7 @@ canvas {
 
 .introduce {
   position: absolute;
-  top: 30%;
+  top: 38%;
   left: 40%;
 }
 

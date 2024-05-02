@@ -14,6 +14,7 @@ body {
 }
 
 
+
 // 스와이퍼
 .swiper {
     width: 90%;
@@ -181,7 +182,94 @@ canvas {
 }
 
 
-// SKILS
+// SKILLS
+.skills {
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    div {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+        border: 1px solid #373737;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+    div:hover {
+        p {
+            display: block;
+        }
+    }
+
+}
+.tool {
+    width: 800px;
+    height: 150px;
+    position: absolute;
+    top: 65%;
+    left: 27%;
+    display: flex;
+    align-items: center;
+
+
+    div {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px ;
+        border: 1px solid #373737;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+    div:hover {
+        p {
+            display: block;
+        }
+    }
+}
 .loading {
     text-transform: uppercase;
     width: 150px;
@@ -256,58 +344,7 @@ canvas {
     }
 }
 
-// SKILLS
-.skills {
-    width: 800px;
-    height: 300px;
-    position: absolute;
-    top: 25%;
-    left: 27%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 
-    div {
-        width: 100px;
-        height: 100px;
-        margin-left: 50px;
-        border: 1px solid #373737;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 80%;
-            height: 80%;
-        }
-    }
-}
-.tool {
-    width: 800px;
-    height: 150px;
-    position: absolute;
-    top: 65%;
-    left: 27%;
-    display: flex;
-    align-items: center;
-
-
-    div {
-        width: 100px;
-        height: 100px;
-        margin-left: 50px ;
-        border: 1px solid #373737;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 80%;
-            height: 80%;
-        }
-
-    }
-}
 
 // Project
 .project {
@@ -315,37 +352,63 @@ canvas {
     height: 90%;
     position: relative;
 
+    .wrap {
+        width: 200px;
+        height: 70px;
+        position: absolute;
+        top: 92%;
+        left: 15%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .chatbox {
+            animation: motion 0.3s linear 0s infinite alternate;
+            margin-top: 0;
+        }
+
+    }
+
+    @keyframes motion {
+        0% {margin-top: 0px;}
+        100% {margin-top: 10px;}
+    }
+
     .box {
         width: 1000px;
-        height: 700px;
+        height: 680px;
         background-color: #b7b7b7;
         border-radius: 10px;
         position: absolute;
         top: 10%;
-        // left: 23%;
-        left: 42%;
+        left: 21%;
+        // left: 42%;
 
         .box_1 {
             width: 700px;
             height: 400px;
+            background-color: #F8FAFF;
             position: absolute;
             top: 3%;
             left: 15%;
+            overflow: hidden;
             img { 
                 width: 100%;
                 border-style: none;
-                transition: 5s;
+                transition: 10s;
             }
         }
-        .box_1:hover {
-            transform: translateY(-85.5%);
+        .box_1:hover img {
+            transform: translateY(calc(-100% + 400px));
         }
 
         .box_2 {
-            width: 700px;
+            width: 800px;
             height: 50px;
             position: absolute;
-            top: 61%;
+            top: 65%;
             left: 15%;
             display: flex;
             flex-wrap: wrap;
@@ -363,11 +426,34 @@ canvas {
 
         .box_3 {
             width: 700px;
-            height: 150px;
-            background-color: #696ba1;
+            height: 100px;
             position: absolute;
             top: 71%;
-            left: 15%;
+            left: 12%;
+            text-align: center;
+
+            h3 {
+                padding-top: 40px;
+            }
+
+            p {
+                padding-top: 10px;
+            }
+        }
+
+        .box_4 {
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            top: 90%;
+            left: 41%;
+            text-align: center;
+
+            button {
+                padding: 10px 9px;
+                border-radius: 10px;
+                border: none;
+            }
         }
     }
 
@@ -392,11 +478,11 @@ canvas {
 // contact
 
 .good {
-    width: 500px;
+    width: 1000px;
     height: 100px;
     position: absolute;
-    top: 15%;
-    left: 35%;
+    top: 18%;
+    left: 25%;
 }
 .ml1 {
     font-weight: 900;
@@ -406,7 +492,7 @@ canvas {
   .ml1 .letter {
     display: inline-block;
     line-height: 1em;
-    font-size: 5rem;
+    font-size: 8rem;
   }
   
   .ml1 .text-wrapper {
@@ -433,7 +519,7 @@ canvas {
 
   .introduce {
     position: absolute;
-    top: 30%;
+    top: 38%;
     left: 40%;
   }
 .self{
