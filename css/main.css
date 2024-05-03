@@ -1,8 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
+@font-face {
+  font-family: "TmoneyRoundWindExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arita-dotum-Medium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "TmoneyRoundWindExtraBold";
 }
 
 html,
@@ -125,7 +138,7 @@ canvas {
 .timeline {
   width: 600px;
   height: 250px;
-  background-color: #F8FAFF;
+  background-color: #E1F7F5;
   position: absolute;
   top: 20%;
   left: 45%;
@@ -133,17 +146,18 @@ canvas {
   border-radius: 50px;
 }
 .timeline h3 {
-  padding: 8.5px 50px;
-  font-weight: 500;
+  padding: 7px 50px;
+  font-family: "Arita-dotum-Medium";
 }
 .timeline span {
   font-weight: bold;
+  padding-left: 30px;
 }
 
 .frofile {
   width: 1000px;
   height: 300px;
-  background-color: #F8FAFF;
+  background-color: #E1F7F5;
   position: absolute;
   top: 55%;
   left: 26%;
@@ -154,20 +168,28 @@ canvas {
 .frofile h2 {
   padding: 30px 0;
   font-size: 2rem;
+  text-shadow: 2px 2px gray;
 }
 .frofile p {
   padding: 10px 90px;
+  line-height: 25px;
+  font-family: "Arita-dotum-Medium";
 }
 
 .skills {
   width: 800px;
   height: 300px;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 27%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+.skills h2 {
+  position: absolute;
+  top: -10%;
+  left: 6%;
 }
 .skills div {
   width: 100px;
@@ -185,9 +207,12 @@ canvas {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100%;
+  height: calc(100% - 16px);
   text-align: center;
   display: none;
+  font-size: 13px;
+  padding-top: 16px;
+  font-family: "Arita-dotum-Medium";
 }
 .skills div img {
   width: 80%;
@@ -201,10 +226,15 @@ canvas {
   width: 800px;
   height: 150px;
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 27%;
   display: flex;
   align-items: center;
+}
+.tool h2 {
+  position: absolute;
+  top: -20%;
+  left: 6%;
 }
 .tool div {
   width: 100px;
@@ -222,9 +252,12 @@ canvas {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100%;
+  height: calc(100% - 16px);
   text-align: center;
   display: none;
+  font-size: 13px;
+  padding-top: 16px;
+  font-family: "Arita-dotum-Medium";
 }
 .tool div img {
   width: 80%;
@@ -252,6 +285,7 @@ canvas {
   position: relative;
   z-index: 999;
   color: #ffffff;
+  font-size: 23px;
 }
 
 .loading:before {
@@ -313,11 +347,11 @@ canvas {
   position: relative;
 }
 .project .wrap {
-  width: 200px;
+  width: 150px;
   height: 70px;
   position: absolute;
-  top: 92%;
-  left: 15%;
+  top: 90%;
+  left: 18%;
 }
 .project .wrap img {
   width: 100%;
@@ -338,7 +372,7 @@ canvas {
 .project .box {
   width: 1000px;
   height: 680px;
-  background-color: #b7b7b7;
+  background-color: #9AC8CD;
   border-radius: 10px;
   position: absolute;
   top: 10%;
@@ -347,11 +381,12 @@ canvas {
 .project .box .box_1 {
   width: 700px;
   height: 400px;
-  background-color: #F8FAFF;
+  background-color: #E1F7F5;
   position: absolute;
   top: 3%;
   left: 15%;
   overflow: hidden;
+  border-radius: 10px;
 }
 .project .box .box_1 img {
   width: 100%;
@@ -363,7 +398,7 @@ canvas {
 }
 .project .box .box_2 {
   width: 800px;
-  height: 50px;
+  height: 30px;
   position: absolute;
   top: 65%;
   left: 15%;
@@ -371,11 +406,11 @@ canvas {
   flex-wrap: wrap;
 }
 .project .box .box_2 button {
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin-right: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #c134e8;
+  background-color: #0E46A3;
   color: #fff;
   font-size: 15px;
 }
@@ -386,12 +421,14 @@ canvas {
   top: 71%;
   left: 12%;
   text-align: center;
+  color: black;
 }
 .project .box .box_3 h3 {
   padding-top: 40px;
 }
 .project .box .box_3 p {
   padding-top: 10px;
+  font-family: "Arita-dotum-Medium";
 }
 .project .box .box_4 {
   width: 120px;
@@ -406,19 +443,25 @@ canvas {
   border-radius: 10px;
   border: none;
 }
+.project .box .box_4 button:hover {
+  cursor: pointer;
+  background-color: #0E46A3;
+  color: #ffffff;
+}
 .project .swiper-pagination-bullet {
   width: 150px;
   height: 50px;
   text-align: center;
   line-height: 50px;
-  font-size: 20PX;
+  font-size: 15PX;
   color: #ffffff;
   opacity: 1;
   background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 }
 .project .swiper-pagination-bullet-active {
   color: #fff;
-  background: #c80fe5;
+  background: #0E46A3;
 }
 
 .good {
