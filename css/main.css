@@ -47,6 +47,13 @@ canvas {
   height: 100%;
 }
 
+.best {
+  color: #ffffff;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
 .header {
   background-color: rgb(14, 10, 41);
   position: fixed;
@@ -138,7 +145,7 @@ canvas {
 .timeline {
   width: 600px;
   height: 250px;
-  background-color: #E1F7F5;
+  background-color: rgba(225, 247, 245, 0.768627451);
   position: absolute;
   top: 20%;
   left: 45%;
@@ -157,7 +164,7 @@ canvas {
 .frofile {
   width: 1000px;
   height: 300px;
-  background-color: #E1F7F5;
+  background-color: rgba(225, 247, 245, 0.7294117647);
   position: absolute;
   top: 55%;
   left: 26%;
@@ -174,6 +181,17 @@ canvas {
   padding: 10px 90px;
   line-height: 25px;
   font-family: "Arita-dotum-Medium";
+}
+
+.skills_other {
+  width: 500px;
+  height: 20px;
+  position: absolute;
+  top: 87%;
+  left: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills {
@@ -316,7 +334,7 @@ canvas {
 }
 .loading:after {
   content: "";
-  background: #ff3600;
+  background: #15befc;
   width: 50px;
   height: 100px;
   display: block;
@@ -346,6 +364,30 @@ canvas {
   height: 90%;
   position: relative;
 }
+.project .wrap1 {
+  width: 370px;
+  height: 100px;
+  z-index: 8888;
+  position: absolute;
+  top: 15%;
+  left: 69%;
+}
+.project .wrap1 img {
+  width: 100%;
+  height: 100%;
+}
+.project .wrap1 .chatbox1 {
+  animation: motion 0.3s linear 0s infinite alternate;
+  margin-top: 0;
+}
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
 .project .wrap {
   width: 150px;
   height: 70px;
@@ -372,7 +414,7 @@ canvas {
 .project .box {
   width: 1000px;
   height: 680px;
-  background-color: #9AC8CD;
+  background-color: rgba(255, 255, 255, 0.5764705882);
   border-radius: 10px;
   position: absolute;
   top: 10%;
@@ -381,7 +423,6 @@ canvas {
 .project .box .box_1 {
   width: 700px;
   height: 400px;
-  background-color: #E1F7F5;
   position: absolute;
   top: 3%;
   left: 15%;
@@ -392,6 +433,7 @@ canvas {
   width: 100%;
   border-style: none;
   transition: 10s;
+  box-shadow: 0 0 10px 5px;
 }
 .project .box .box_1:hover img {
   transform: translateY(calc(-100% + 400px));
@@ -469,7 +511,7 @@ canvas {
   height: 100px;
   position: absolute;
   top: 18%;
-  left: 25%;
+  left: 23%;
 }
 
 .ml1 {
@@ -512,13 +554,13 @@ canvas {
 .introduce {
   position: absolute;
   top: 38%;
-  left: 40%;
+  left: 38%;
 }
 
 .self {
   position: absolute;
-  top: 55%;
-  left: 34%;
+  top: 57%;
+  left: 30%;
 }
 .self h3 {
   font-size: 2.5rem;
@@ -527,4 +569,12 @@ canvas {
 }
 .self span {
   font-weight: bold;
+}
+
+.finsh {
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  top: 95%;
+  left: 42%;
 }
