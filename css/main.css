@@ -213,7 +213,8 @@ canvas {
   width: 100px;
   height: 100px;
   margin-left: 50px;
-  border: 1px solid #373737;
+  border: 1px solid #2b2b2b;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,10 +232,11 @@ canvas {
   font-size: 13px;
   padding-top: 16px;
   font-family: "Arita-dotum-Medium";
+  border-radius: 20px;
 }
 .skills div img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 .skills div:hover p {
   display: block;
@@ -258,11 +260,12 @@ canvas {
   width: 100px;
   height: 100px;
   margin-left: 50px;
-  border: 1px solid #373737;
+  border: 1px solid #2b2b2b;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  border-radius: 20px;
 }
 .tool div p {
   position: absolute;
@@ -276,10 +279,11 @@ canvas {
   font-size: 13px;
   padding-top: 16px;
   font-family: "Arita-dotum-Medium";
+  border-radius: 20px;
 }
 .tool div img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 .tool div:hover p {
   display: block;
@@ -428,12 +432,13 @@ canvas {
   left: 15%;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 0 10px gray;
 }
 .project .box .box_1 img {
   width: 100%;
   border-style: none;
   transition: 10s;
-  box-shadow: 0 0 10px 5px;
+  box-shadow: 5px 5px 50px 5px;
 }
 .project .box .box_1:hover img {
   transform: translateY(calc(-100% + 400px));
@@ -461,7 +466,7 @@ canvas {
   height: 100px;
   position: absolute;
   top: 71%;
-  left: 12%;
+  left: 15%;
   text-align: center;
   color: black;
 }
@@ -473,22 +478,31 @@ canvas {
   font-family: "Arita-dotum-Medium";
 }
 .project .box .box_4 {
-  width: 120px;
-  height: 50px;
+  width: 200px;
   position: absolute;
-  top: 90%;
-  left: 41%;
+  top: 91%;
+  left: 40%;
   text-align: center;
 }
-.project .box .box_4 button {
-  padding: 10px 9px;
+.project .box .box_4 .pushable {
+  background: hsl(255, 72%, 69%);
   border-radius: 10px;
   border: none;
-}
-.project .box .box_4 button:hover {
+  padding: 0;
   cursor: pointer;
-  background-color: #0E46A3;
-  color: #ffffff;
+  outline-offset: 4px;
+}
+.project .box .box_4 .front {
+  display: block;
+  padding: 8px 32px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: hsl(246, 72%, 58%);
+  color: white;
+  transform: translateY(-6px);
+}
+.project .box .box_4 .pushable:active .front {
+  transform: translateY(-2px);
 }
 .project .swiper-pagination-bullet {
   width: 150px;
