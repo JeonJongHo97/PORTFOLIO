@@ -58,6 +58,7 @@ canvas {
     position: absolute;
     top: 2%;
     right: 2%;
+    font-family: 'Arita-dotum-Medium';
 }
 
 
@@ -161,51 +162,50 @@ canvas {
     position: absolute;
     top: 20%;
     left: 27%;
-    border-radius: 500px;
+    border-radius: 150px;
 
 }
 
 .timeline {
     width: 600px;
     height: 250px;
-    background-color: #e1f7f5c4;
+    backdrop-filter: invert(1);
     position: absolute;
     top: 20%;
     left: 45%;
     color: black;
-    border-radius: 50px;
+    border-radius: 10px;
 
 
     h3 {
-        padding: 7px 50px;
+        padding: 8px 40px;
         font-family: 'Arita-dotum-Medium';
     }
 
     span {
         font-weight: bold;
-        padding-left: 30px;
+        padding-left: 10px;
     }
 }
 
 .frofile {
     width: 1000px;
     height: 300px;
-    background-color: #e1f7f5ba;
+    backdrop-filter: invert(1);
     position: absolute;
     top: 55%;
     left: 26%;
     color: black;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 10px;
 
     h2 {
-        padding: 30px 0;
+        padding: 25px 0;
         font-size: 2rem;
         text-shadow: 2px 2px gray;
     }
 
     p {
-        padding: 10px 90px;
         line-height: 25px;
         font-family: 'Arita-dotum-Medium';
 
@@ -223,6 +223,11 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: lighter;
+    h5{
+        font-family: 'Arita-dotum-Medium';
+        letter-spacing: 1px;
+    }
 }
 
 .skills {
@@ -258,7 +263,7 @@ canvas {
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.641);
             width: 100%;
             height: calc(100% - 16px);
             text-align: center;
@@ -488,7 +493,7 @@ canvas {
     .box {
         width: 1000px;
         height: 680px;
-        background-color: #ffffff93;
+        backdrop-filter: invert(1);
         border-radius: 10px;
         position: absolute;
         top: 10%;
@@ -569,7 +574,7 @@ canvas {
             text-align: center;
 
             .pushable {
-                background: hsl(255, 72%, 69%);
+                background: hsl(233, 89%, 75%);
                 border-radius: 10px;
                 border: none;
                 padding: 0;
@@ -581,7 +586,7 @@ canvas {
                 padding: 8px 32px;
                 border-radius: 12px;
                 font-size: 1rem;
-                background: hsl(246, 72%, 58%);
+                background: hsl(246, 81%, 49%);
                 color: white;
                 transform: translateY(-6px);
               }
@@ -684,8 +689,9 @@ canvas {
 }
 .finsh {
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     position: absolute;
-    top: 95%;
+    top: 93%;
     left: 42%;
+    font-family: 'Arita-dotum-Medium';
 }
